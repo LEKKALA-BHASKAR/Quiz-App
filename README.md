@@ -1,3 +1,1 @@
-# Quiz-App
-
-[Edit in StackBlitz next generation editor ⚡️](https://stackblitz.com/~/github.com/LEKKALA-BHASKAR/Quiz-App)
+The Quiz App is a responsive and interactive application designed to test users’ knowledge on various topics through a series of multiple-choice questions. This app displays questions, allows users to select answers, and provides immediate feedback on their score at the end. It is an ideal tool for anyone looking to create engaging quizzes for educational purposes, skill assessments, or fun challenges.
