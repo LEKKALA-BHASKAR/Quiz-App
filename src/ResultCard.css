@@ -1,0 +1,69 @@
+/* ResultCard.css */
+.result-card-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3f4f6;
+}
+
+.result-card {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-out;
+  z-index: 2;
+}
+
+.animated-popup {
+  animation: popup 0.6s ease-out;
+}
+
+@keyframes popup {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.paper-falling-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.falling-paper {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  animation: fall 4s linear infinite;
+  opacity: 0.8;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-100%) rotate(0deg);
+    left: calc(50% - 10px);
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    left: calc(50% + (random(-150px, 150px)));
+  }
+}
